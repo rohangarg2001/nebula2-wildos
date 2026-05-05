@@ -1,0 +1,24 @@
+# Minimal requirements to run explorfm/inference_demo.ipynb with uv.
+#   uv venv wildos_venv && source wildos_venv/bin/activate
+#   uv pip install -r explorfm/requirements.txt
+#   uv pip install -e ./nvidia_radio ./explorfm
+
+# --------- vision / backbone --------- #
+timm==1.0.15
+open-clip-torch==2.32.0
+transformers==4.51.3
+einops==0.8.1
+huggingface_hub
+
+# --------- image i/o + plotting --------- #
+numpy
+pillow
+matplotlib
+
+# --------- needed to unpickle the head checkpoints --------- #
+omegaconf
+
+# --------- notebook runtime --------- #
+jupyter
+ipykernel
+ipywidgets
