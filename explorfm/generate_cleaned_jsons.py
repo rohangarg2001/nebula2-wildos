@@ -12,9 +12,9 @@ Output mirrors the dataset directory structure under --output-root.
 
 Example:
     python explorfm/generate_cleaned_jsons.py \
-        --dataset-root "/home/rohang73/Desktop/ASL RGB NAV GRAPH" \
-        --output-root  "/home/rohang73/Desktop/ASL RGB NAV GRAPH cleaned" \
-        --ckpts-dir    "/home/rohang73/Desktop/nebula2-wildos/ckpts"
+        --dataset-root "/home/rohang73/Desktop/longrange" \
+        --output-root  "/home/rohang73/Desktop/longrange_explorfm_clean" \
+        --ckpts-dir    "/home/rohang73/Desktop/rgn_graph_cleaning/nebula2-wildos/ckpts"
 """
 from __future__ import annotations
 

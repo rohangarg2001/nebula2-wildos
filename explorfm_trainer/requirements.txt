@@ -1,6 +1,8 @@
 # --------- pytorch --------- #
-torch>=2.0.0
-torchvision>=0.15.0
+# cu128 wheels are required for Blackwell GPUs (sm_120, e.g. RTX 50-series).
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.7.0+cu128
+torchvision==0.22.0+cu128
 lightning>=2.0.0
 torchmetrics>=0.11.4
 
